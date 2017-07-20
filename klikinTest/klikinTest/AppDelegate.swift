@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = router.navigationController
         window?.makeKeyAndVisible()
         
+        router.presentHome()
+        
         return true
     }
 

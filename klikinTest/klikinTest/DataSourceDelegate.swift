@@ -10,4 +10,5 @@ import Foundation
 
 protocol DataSourceDelegate {
     
+    func getCommerces(completion: @escaping ((_ commerces: [Commerce], _ error: NSError?) -> Void))
 }

@@ -30,4 +30,12 @@ class HomePresenter: HomePresenterDelegate {
         
         return controllerDelegate as? UIViewController
     }
+    
+    func showCommerces() {
+        
+        dataSource?.getCommerces(completion: { (commerces, error) in
+            
+            print(commerces)
+        })
+    }
 }

@@ -14,4 +14,8 @@ class Contact: JSONModel {
     var phone = ""
     var email = ""
     var web = ""
+    
+    override class func propertyIsOptional(_ propertyName: String!) -> Bool {
+        return true
+    }
 }

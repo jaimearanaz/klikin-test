@@ -31,4 +31,11 @@ class Router: RouterDelegate {
         
         self.presenterInstances = presenterInstances
     }
+    
+    // MARK: - RouterDelegate methods
+    
+    func presentHome() {
+        
+        self.presenterInstances?.homePresenter.showCommerces()
+    }
 }

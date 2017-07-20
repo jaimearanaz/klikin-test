@@ -23,7 +23,7 @@
 		6F1B0C371F20FBAA005B4B01 /* Commerce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B0C361F20FBAA005B4B01 /* Commerce.swift */; };
 		6F1B0C391F20FBE1005B4B01 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B0C381F20FBE1005B4B01 /* Address.swift */; };
 		6F1B0C3B1F20FC5F005B4B01 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B0C3A1F20FC5F005B4B01 /* Contact.swift */; };
-		6F1B0C3D1F20FC97005B4B01 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B0C3C1F20FC97005B4B01 /* Location.swift */; };
+		6F1B0C3F1F20FE52005B4B01 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B0C3E1F20FE52005B4B01 /* WebServices.swift */; };
 		D3B57F8889A6B7D55C2F6762 /* Pods_klikinTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028B2CA73B8C2C488E3AF2B9 /* Pods_klikinTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +47,7 @@
 		6F1B0C361F20FBAA005B4B01 /* Commerce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commerce.swift; sourceTree = "<group>"; };
 		6F1B0C381F20FBE1005B4B01 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		6F1B0C3A1F20FC5F005B4B01 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		6F1B0C3C1F20FC97005B4B01 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		6F1B0C3E1F20FE52005B4B01 /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		C6012C099E6B3D01A1E2169D /* Pods-klikinTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikinTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-klikinTest/Pods-klikinTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F029EE00A2106230AFBB89E6 /* Pods-klikinTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikinTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-klikinTest/Pods-klikinTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +132,7 @@
 			children = (
 				6F1B0C2F1F20F5B3005B4B01 /* DataSourceDelegate.swift */,
 				6F1B0C311F20F5C1005B4B01 /* DataSource.swift */,
+				6F1B0C3E1F20FE52005B4B01 /* WebServices.swift */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -142,7 +143,6 @@
 				6F1B0C361F20FBAA005B4B01 /* Commerce.swift */,
 				6F1B0C381F20FBE1005B4B01 /* Address.swift */,
 				6F1B0C3A1F20FC5F005B4B01 /* Contact.swift */,
-				6F1B0C3C1F20FC97005B4B01 /* Location.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -294,11 +294,11 @@
 				6F1B0C1F1F20F48E005B4B01 /* Router.swift in Sources */,
 				6F1B0C271F20F4D0005B4B01 /* HomePresenter.swift in Sources */,
 				6F1B0C3B1F20FC5F005B4B01 /* Contact.swift in Sources */,
-				6F1B0C3D1F20FC97005B4B01 /* Location.swift in Sources */,
 				6F1B0C0C1F20F3CD005B4B01 /* AppDelegate.swift in Sources */,
 				6F1B0C2D1F20F4F1005B4B01 /* HomeViewControllerDelegate.swift in Sources */,
 				6F1B0C291F20F4DA005B4B01 /* HomeViewController.swift in Sources */,
 				6F1B0C371F20FBAA005B4B01 /* Commerce.swift in Sources */,
+				6F1B0C3F1F20FE52005B4B01 /* WebServices.swift in Sources */,
 				6F1B0C211F20F49D005B4B01 /* RouterDelegate.swift in Sources */,
 				6F1B0C321F20F5C1005B4B01 /* DataSource.swift in Sources */,
 				6F1B0C301F20F5B3005B4B01 /* DataSourceDelegate.swift in Sources */,

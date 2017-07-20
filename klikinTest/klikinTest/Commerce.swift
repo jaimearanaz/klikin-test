@@ -17,8 +17,36 @@ class Commerce: JSONModel {
     var shortDescription = ""
     var longDescription = ""
     var logo = ""
-    var images = [String]()
+    var photos = [String]()
     var address = Address()
     var contact = Contact()
-    var location = Location()
+    var location = [Double]()
+    
+    override class func keyMapper() -> JSONKeyMapper {
+        
+        return JSONKeyMapper.init(modelToJSONDictionary: ["identifier": "_id", "longDescription": "description"])
+    }
+    
+    override class func propertyIsOptional(_ propertyName: String!) -> Bool {
+        return true
+    }
+    
+    func setLogo(withNSDictionary dictionary: NSDictionary) {
+        
+        if let thumbnails = dictionary["thumbnails"] as? NSDictionary, let small = thumbnails["small"] as? String {
+            logo = small
+        }
+    }
+    
+    func setPhotos(withNSArray array: NSArray) {
+        
+        for onePhoto in array {
+            if let photo = onePhoto as? NSDictionary,
+                let thumbnails = photo["thumbnails"] as? NSDictionary,
+                let medium = thumbnails["medium"] as? String {
+                
+                photos.append(medium)
+            }
+        }
+    }
 }

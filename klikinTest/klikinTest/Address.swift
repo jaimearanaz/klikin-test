@@ -15,4 +15,8 @@ class Address: JSONModel {
     var zip = 0
     var street = ""
     var country = ""
+    
+    override class func propertyIsOptional(_ propertyName: String!) -> Bool {
+        return true
+    }
 }

@@ -10,4 +10,15 @@ import Foundation
 
 class DataSource: DataSourceDelegate {
     
+    fileprivate var webServices = WebServices()
+    
+    // MARK: - DataSourceDelegate methods
+    
+    func getCommerces(completion: @escaping ((_ commerces: [Commerce], _ error: NSError?) -> Void)) {
+        
+        webServices.getCommerces { (commerces, error) in
+            
+            completion(commerces, error)
+        }
+    }
 }
