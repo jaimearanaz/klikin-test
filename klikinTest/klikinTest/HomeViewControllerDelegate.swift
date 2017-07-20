@@ -10,4 +10,9 @@ import Foundation
 
 protocol HomeViewControllerDelegate {
     
+    func startLoading()
+    
+    func stopLoading()
+    
+    func showCommerces(_ commerces: [Commerce])
 }
