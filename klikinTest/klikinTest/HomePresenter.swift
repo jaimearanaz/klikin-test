@@ -33,9 +33,17 @@ class HomePresenter: HomePresenterDelegate {
     
     func showCommerces() {
         
+        controllerDelegate?.startLoading()
+        
         dataSource?.getCommerces(completion: { (commerces, error) in
             
-            self.controllerDelegate?.showCommerces(commerces)
+            self.controllerDelegate?.stopLoading()
+            
+            if (error == nil) {
+                self.controllerDelegate?.showCommerces(commerces)
+            } else {
+                // TODO: handle error
+            }
         })
     }
 }

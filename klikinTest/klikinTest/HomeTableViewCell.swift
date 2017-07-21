@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
 class HomeTableViewCell: UITableViewCell {
     
@@ -21,7 +22,10 @@ class HomeTableViewCell: UITableViewCell {
     
     func setupCell(withCommerce commerce: Commerce) {
         
-        nameLabel.text = commerce.name
+        let url = URL(string: commerce.logo)
+        logoView.sd_setImage(with: url)
+        
+        nameLabel.text = commerce.name.capitalized
         descriptionLabel.text = commerce.shortDescription
         cityLabel.text = commerce.address.city
         categoryLabel.text = commerce.category.uppercased()

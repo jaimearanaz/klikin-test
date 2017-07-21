@@ -75,7 +75,7 @@
                             <constraint firstItem="6G2-je-TE4" firstAttribute="top" secondItem="jwX-FG-SeN" secondAttribute="top" constant="22" id="zS1-ur-iWA"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UgT-zE-G2d" userLabel="Logo">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UgT-zE-G2d" userLabel="Logo">
                         <rect key="frame" x="8" y="8" width="84" height="84"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="84" id="fUa-fh-1UG"/>
