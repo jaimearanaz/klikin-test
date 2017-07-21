@@ -33,5 +33,8 @@ class DetailsPresenter: DetailsPresenterDelegate {
     
     func showCommerce(commerceId: String) {
         
+        dataSource?.getCommerce(withId: commerceId, completion: { (commerce, error) in
+            
+        })
     }
 }

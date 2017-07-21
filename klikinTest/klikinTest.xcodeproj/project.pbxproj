@@ -102,7 +102,7 @@
 				6F1B0C1D1F20F46B005B4B01 /* app navigation */,
 				6F1B0C241F20F4B0005B4B01 /* use cases */,
 				6F1B0C2E1F20F5A5005B4B01 /* data */,
-				6F1B0C351F20FAB7005B4B01 /* model */,
+				6F1B0C351F20FAB7005B4B01 /* models */,
 				6F1B0C0B1F20F3CD005B4B01 /* AppDelegate.swift */,
 				6F1B0C121F20F3CD005B4B01 /* Assets.xcassets */,
 				6F1B0C141F20F3CD005B4B01 /* LaunchScreen.storyboard */,
@@ -154,14 +154,14 @@
 			name = data;
 			sourceTree = "<group>";
 		};
-		6F1B0C351F20FAB7005B4B01 /* model */ = {
+		6F1B0C351F20FAB7005B4B01 /* models */ = {
 			isa = PBXGroup;
 			children = (
 				6F1B0C361F20FBAA005B4B01 /* Commerce.swift */,
 				6F1B0C381F20FBE1005B4B01 /* Address.swift */,
 				6F1B0C3A1F20FC5F005B4B01 /* Contact.swift */,
 			);
-			name = model;
+			name = models;
 			sourceTree = "<group>";
 		};
 		6F21F0791F21FE050062859D /* details */ = {
