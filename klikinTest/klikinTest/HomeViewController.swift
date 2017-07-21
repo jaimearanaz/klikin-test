@@ -84,6 +84,10 @@ class HomeViewController: UIViewController, HomeViewControllerDelegate, UITableV
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        // TODO:
+        let exists = commerces.count > indexPath.item
+        if (exists) {
+            let identifier = commerces[indexPath.item].identifier
+            presenterDelegate?.didSelectCommerce(commerceId: identifier)
+        }
     }
 }

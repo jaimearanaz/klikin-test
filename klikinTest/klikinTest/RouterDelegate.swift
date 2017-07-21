@@ -11,4 +11,6 @@ import Foundation
 protocol RouterDelegate {
     
     func presentHome()
+    
+    func presentCommerce(commerceId: String)
 }

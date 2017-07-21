@@ -38,4 +38,8 @@ class Router: RouterDelegate {
         
         self.presenterInstances?.homePresenter.showCommerces()
     }
+    
+    func presentCommerce(commerceId: String) {
+        
+    }
 }

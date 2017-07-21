@@ -10,4 +10,5 @@ import Foundation
 
 protocol HomePresenterDelegate {
     
+    func didSelectCommerce(commerceId: String)
 }

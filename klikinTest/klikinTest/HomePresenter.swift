@@ -46,4 +46,11 @@ class HomePresenter: HomePresenterDelegate {
             }
         })
     }
+    
+    // MARK: - HomePresenterDelegate methods
+    
+    func didSelectCommerce(commerceId: String) {
+        
+        router?.presentCommerce(commerceId: commerceId)
+    }
 }
