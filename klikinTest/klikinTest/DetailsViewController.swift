@@ -15,9 +15,10 @@ class DetailsViewController: UIViewController, DetailsViewControllerDelegate {
     @IBOutlet var mainScrollView: UIScrollView!
     @IBOutlet var photosScrollView: UIScrollView!
     @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var phoneLabel: UILabel!
+    @IBOutlet var phoneLabel: UITextView!
     @IBOutlet var addressLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var loadingView: UIView!
     
     fileprivate let photoHeight: CGFloat = 200
     fileprivate var presenterDelegate: DetailsPresenterDelegate?
@@ -34,12 +35,12 @@ class DetailsViewController: UIViewController, DetailsViewControllerDelegate {
     
     func startLoading() {
      
-        // TODO: show loading view
+        loadingView.isHidden = false
     }
     
     func stopLoading() {
-        
-        // TODO: hide loading view
+
+        loadingView.isHidden = true
     }
     
     func showCommerce(_ commerce: Commerce) {
@@ -47,8 +48,9 @@ class DetailsViewController: UIViewController, DetailsViewControllerDelegate {
         self.commerce = commerce
         
         updatePhotosScrollImages()
-        nameLabel.text = commerce.name
+        nameLabel.text = commerce.name.capitalized
         phoneLabel.text = commerce.contact.phone
+        phoneLabel.textContainerInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         addressLabel.text = commerce.formatAddress()
         setupDescriptionLabel()
     

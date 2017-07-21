@@ -45,7 +45,7 @@ class Router: RouterDelegate {
         
         if let detailsPresenter = presenterInstances?.detailsPresenter,
             let viewController = detailsPresenter.viewController() {
-            
+
             navigationController?.pushViewController(viewController, animated: true, withCompletionBlock: {
                 detailsPresenter.showCommerce(commerceId: commerceId)
             })

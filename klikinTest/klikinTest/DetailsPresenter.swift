@@ -30,7 +30,7 @@ class DetailsPresenter: DetailsPresenterDelegate {
         
         return controllerDelegate as? UIViewController
     }
-    
+
     func showCommerce(commerceId: String) {
         
         controllerDelegate?.startLoading()
