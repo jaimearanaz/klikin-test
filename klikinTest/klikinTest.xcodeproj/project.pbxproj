@@ -26,6 +26,11 @@
 		6F1B0C3F1F20FE52005B4B01 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B0C3E1F20FE52005B4B01 /* WebServices.swift */; };
 		6F1B0C411F210A9B005B4B01 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B0C401F210A9B005B4B01 /* HomeTableViewCell.swift */; };
 		6F1B0C431F210AA5005B4B01 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B0C421F210AA5005B4B01 /* HomeTableViewCell.xib */; };
+		6F21F07B1F21FE180062859D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F21F07A1F21FE180062859D /* DetailsViewController.swift */; };
+		6F21F07D1F21FE200062859D /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F21F07C1F21FE200062859D /* DetailsPresenter.swift */; };
+		6F21F07F1F21FE2A0062859D /* DetailsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F21F07E1F21FE2A0062859D /* DetailsViewControllerDelegate.swift */; };
+		6F21F0811F21FE340062859D /* DetailsPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F21F0801F21FE340062859D /* DetailsPresenterDelegate.swift */; };
+		6F21F0831F21FE3E0062859D /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F21F0821F21FE3E0062859D /* DetailsViewController.xib */; };
 		D3B57F8889A6B7D55C2F6762 /* Pods_klikinTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028B2CA73B8C2C488E3AF2B9 /* Pods_klikinTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +57,11 @@
 		6F1B0C3E1F20FE52005B4B01 /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		6F1B0C401F210A9B005B4B01 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		6F1B0C421F210AA5005B4B01 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		6F21F07A1F21FE180062859D /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		6F21F07C1F21FE200062859D /* DetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		6F21F07E1F21FE2A0062859D /* DetailsViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewControllerDelegate.swift; sourceTree = "<group>"; };
+		6F21F0801F21FE340062859D /* DetailsPresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsPresenterDelegate.swift; sourceTree = "<group>"; };
+		6F21F0821F21FE3E0062859D /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		C6012C099E6B3D01A1E2169D /* Pods-klikinTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikinTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-klikinTest/Pods-klikinTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F029EE00A2106230AFBB89E6 /* Pods-klikinTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikinTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-klikinTest/Pods-klikinTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				6F1B0C251F20F4B9005B4B01 /* home */,
+				6F21F0791F21FE050062859D /* details */,
 			);
 			name = "use cases";
 			sourceTree = "<group>";
@@ -151,6 +162,18 @@
 				6F1B0C3A1F20FC5F005B4B01 /* Contact.swift */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		6F21F0791F21FE050062859D /* details */ = {
+			isa = PBXGroup;
+			children = (
+				6F21F0821F21FE3E0062859D /* DetailsViewController.xib */,
+				6F21F07A1F21FE180062859D /* DetailsViewController.swift */,
+				6F21F07E1F21FE2A0062859D /* DetailsViewControllerDelegate.swift */,
+				6F21F0801F21FE340062859D /* DetailsPresenterDelegate.swift */,
+				6F21F07C1F21FE200062859D /* DetailsPresenter.swift */,
+			);
+			name = details;
 			sourceTree = "<group>";
 		};
 		99D7AD2D971123AEAC9E3EA7 /* Pods */ = {
@@ -235,6 +258,7 @@
 			files = (
 				6F1B0C161F20F3CD005B4B01 /* LaunchScreen.storyboard in Resources */,
 				6F1B0C131F20F3CD005B4B01 /* Assets.xcassets in Resources */,
+				6F21F0831F21FE3E0062859D /* DetailsViewController.xib in Resources */,
 				6F1B0C431F210AA5005B4B01 /* HomeTableViewCell.xib in Resources */,
 				6F1B0C341F20F63F005B4B01 /* HomeViewController.xib in Resources */,
 			);
@@ -297,15 +321,19 @@
 			files = (
 				6F1B0C231F20F4AA005B4B01 /* PresenterInstances.swift in Sources */,
 				6F1B0C391F20FBE1005B4B01 /* Address.swift in Sources */,
+				6F21F07F1F21FE2A0062859D /* DetailsViewControllerDelegate.swift in Sources */,
 				6F1B0C2B1F20F4E6005B4B01 /* HomePresenterDelegate.swift in Sources */,
 				6F1B0C1F1F20F48E005B4B01 /* Router.swift in Sources */,
 				6F1B0C271F20F4D0005B4B01 /* HomePresenter.swift in Sources */,
+				6F21F0811F21FE340062859D /* DetailsPresenterDelegate.swift in Sources */,
 				6F1B0C3B1F20FC5F005B4B01 /* Contact.swift in Sources */,
 				6F1B0C411F210A9B005B4B01 /* HomeTableViewCell.swift in Sources */,
 				6F1B0C0C1F20F3CD005B4B01 /* AppDelegate.swift in Sources */,
 				6F1B0C2D1F20F4F1005B4B01 /* HomeViewControllerDelegate.swift in Sources */,
+				6F21F07D1F21FE200062859D /* DetailsPresenter.swift in Sources */,
 				6F1B0C291F20F4DA005B4B01 /* HomeViewController.swift in Sources */,
 				6F1B0C371F20FBAA005B4B01 /* Commerce.swift in Sources */,
+				6F21F07B1F21FE180062859D /* DetailsViewController.swift in Sources */,
 				6F1B0C3F1F20FE52005B4B01 /* WebServices.swift in Sources */,
 				6F1B0C211F20F49D005B4B01 /* RouterDelegate.swift in Sources */,
 				6F1B0C321F20F5C1005B4B01 /* DataSource.swift in Sources */,

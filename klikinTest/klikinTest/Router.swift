@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import UINavigationControllerWithCompletionBlock
 
 class Router: RouterDelegate {
     
@@ -41,5 +42,13 @@ class Router: RouterDelegate {
     
     func presentCommerce(commerceId: String) {
         
+        
+        if let detailsPresenter = presenterInstances?.detailsPresenter,
+            let viewController = detailsPresenter.viewController() {
+            
+            navigationController?.pushViewController(viewController, animated: true, withCompletionBlock: {
+                detailsPresenter.showCommerce(commerceId: commerceId)
+            })
+        }
     }
 }

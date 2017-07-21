@@ -26,6 +26,19 @@ class PresenterInstances {
         return presenter
     }()
     
+    lazy var detailsPresenter: DetailsPresenter = {
+        
+        let presenter = DetailsPresenter()
+        let viewController = DetailsViewController(nibName: "DetailsViewController", bundle: nil)
+        
+        presenter.setupPresenter(controllerDelegate: viewController,
+                                 dataSource: self.dataSource!,
+                                 router: self.router!)
+        viewController.setupViewController(presenterDelegate: presenter)
+        
+        return presenter
+    }()
+    
     // MARK: - Public methods
     
     func setupPresenterInstances(router: RouterDelegate, dataSource: DataSourceDelegate) {
