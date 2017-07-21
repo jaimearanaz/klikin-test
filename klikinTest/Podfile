@@ -10,5 +10,7 @@ target 'klikinTest' do
 
     # parsing JSON
     pod 'JSONModel'
+    # load web images with cache
+    pod 'SDWebImage'
 
 end
