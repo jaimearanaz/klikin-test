@@ -22,6 +22,8 @@ class Commerce: JSONModel {
     var contact = Contact()
     var location = [Double]()
     
+    // MARK: - Lifecycle methods
+    
     override class func keyMapper() -> JSONKeyMapper {
         
         return JSONKeyMapper.init(modelToJSONDictionary: ["identifier": "_id", "longDescription": "description"])
@@ -48,5 +50,12 @@ class Commerce: JSONModel {
                 photos.append(medium)
             }
         }
+    }
+    
+    // MARK: - Public methods
+    
+    func isShortDescriptionEmpty() -> Bool {
+        
+        return (shortDescription == "") || (shortDescription == ".")
     }
 }

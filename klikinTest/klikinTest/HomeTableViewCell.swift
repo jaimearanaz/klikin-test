@@ -13,6 +13,7 @@ import SDWebImage
 class HomeTableViewCell: UITableViewCell {
     
     @IBOutlet var logoView: UIImageView!
+    @IBOutlet var stackView: UIStackView!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var cityLabel: UILabel!
@@ -26,8 +27,15 @@ class HomeTableViewCell: UITableViewCell {
         logoView.sd_setImage(with: url)
         
         nameLabel.text = commerce.name.capitalized
-        descriptionLabel.text = commerce.shortDescription
-        cityLabel.text = commerce.address.city
+        
+        if (commerce.isShortDescriptionEmpty()) {
+            stackView.removeArrangedSubview(descriptionLabel)
+            descriptionLabel.removeFromSuperview()
+        } else {
+            descriptionLabel.text = commerce.shortDescription
+        }
+        
+        cityLabel.text = commerce.address.city.capitalized
         categoryLabel.text = commerce.category.uppercased()
     }
 }
