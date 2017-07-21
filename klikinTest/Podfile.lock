@@ -1,17 +1,23 @@
 PODS:
+  - JRSwizzle (1.0)
   - JSONModel (1.7.0)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - UINavigationControllerWithCompletionBlock (0.0.8):
+    - JRSwizzle (~> 1.0)
 
 DEPENDENCIES:
   - JSONModel
   - SDWebImage
+  - UINavigationControllerWithCompletionBlock
 
 SPEC CHECKSUMS:
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  UINavigationControllerWithCompletionBlock: c043176ee769b1e108761fff73ed776645f0f9d0
 
-PODFILE CHECKSUM: 3f426fc5c95d3394576b51097ca59b29b5557af1
+PODFILE CHECKSUM: 49097f5bf309f81ed5a3a88e5b3ff2e7e83dec29
 
 COCOAPODS: 1.2.1

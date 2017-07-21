@@ -12,5 +12,7 @@ target 'klikinTest' do
     pod 'JSONModel'
     # load web images with cache
     pod 'SDWebImage'
+    # navigation controller with blocks
+    pod 'UINavigationControllerWithCompletionBlock'
 
 end
