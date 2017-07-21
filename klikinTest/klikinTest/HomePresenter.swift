@@ -35,7 +35,7 @@ class HomePresenter: HomePresenterDelegate {
         
         dataSource?.getCommerces(completion: { (commerces, error) in
             
-            print(commerces)
+            self.controllerDelegate?.showCommerces(commerces)
         })
     }
 }

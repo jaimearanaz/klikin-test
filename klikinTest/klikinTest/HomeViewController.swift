@@ -13,7 +13,7 @@ class HomeViewController: UIViewController, HomeViewControllerDelegate, UITableV
  
     @IBOutlet var tableView: UITableView!
     
-    fileprivate let rowHeight: CGFloat = 80
+    fileprivate let rowHeight: CGFloat = 100
     fileprivate var presenterDelegate: HomePresenterDelegate?
     fileprivate var commerces = [Commerce]()
     
@@ -39,12 +39,12 @@ class HomeViewController: UIViewController, HomeViewControllerDelegate, UITableV
     
     func startLoading() {
         
-        // TODO:
+        // TODO: show loading view
     }
     
     func stopLoading() {
         
-        // TODO:
+        // TODO: hide loading view
     }
     
     func showCommerces(_ commerces: [Commerce]) {
