@@ -31,6 +31,8 @@
 		6F21F07F1F21FE2A0062859D /* DetailsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F21F07E1F21FE2A0062859D /* DetailsViewControllerDelegate.swift */; };
 		6F21F0811F21FE340062859D /* DetailsPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F21F0801F21FE340062859D /* DetailsPresenterDelegate.swift */; };
 		6F21F0831F21FE3E0062859D /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F21F0821F21FE3E0062859D /* DetailsViewController.xib */; };
+		6F21F0871F220A040062859D /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F21F0861F220A040062859D /* UIView+Constraints.swift */; };
+		6F21F0891F221E690062859D /* String+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F21F0881F221E690062859D /* String+Height.swift */; };
 		D3B57F8889A6B7D55C2F6762 /* Pods_klikinTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028B2CA73B8C2C488E3AF2B9 /* Pods_klikinTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		6F21F07E1F21FE2A0062859D /* DetailsViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewControllerDelegate.swift; sourceTree = "<group>"; };
 		6F21F0801F21FE340062859D /* DetailsPresenterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsPresenterDelegate.swift; sourceTree = "<group>"; };
 		6F21F0821F21FE3E0062859D /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		6F21F0861F220A040062859D /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		6F21F0881F221E690062859D /* String+Height.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Height.swift"; sourceTree = "<group>"; };
 		C6012C099E6B3D01A1E2169D /* Pods-klikinTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikinTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-klikinTest/Pods-klikinTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F029EE00A2106230AFBB89E6 /* Pods-klikinTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klikinTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-klikinTest/Pods-klikinTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,10 +107,8 @@
 				6F1B0C241F20F4B0005B4B01 /* use cases */,
 				6F1B0C2E1F20F5A5005B4B01 /* data */,
 				6F1B0C351F20FAB7005B4B01 /* models */,
-				6F1B0C0B1F20F3CD005B4B01 /* AppDelegate.swift */,
-				6F1B0C121F20F3CD005B4B01 /* Assets.xcassets */,
-				6F1B0C141F20F3CD005B4B01 /* LaunchScreen.storyboard */,
-				6F1B0C171F20F3CD005B4B01 /* Info.plist */,
+				6F21F0851F2209F60062859D /* utils */,
+				6F21F0841F2203950062859D /* supporting files */,
 			);
 			path = klikinTest;
 			sourceTree = "<group>";
@@ -147,9 +149,9 @@
 		6F1B0C2E1F20F5A5005B4B01 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				6F1B0C2F1F20F5B3005B4B01 /* DataSourceDelegate.swift */,
-				6F1B0C311F20F5C1005B4B01 /* DataSource.swift */,
 				6F1B0C3E1F20FE52005B4B01 /* WebServices.swift */,
+				6F1B0C311F20F5C1005B4B01 /* DataSource.swift */,
+				6F1B0C2F1F20F5B3005B4B01 /* DataSourceDelegate.swift */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -174,6 +176,26 @@
 				6F21F07C1F21FE200062859D /* DetailsPresenter.swift */,
 			);
 			name = details;
+			sourceTree = "<group>";
+		};
+		6F21F0841F2203950062859D /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				6F1B0C0B1F20F3CD005B4B01 /* AppDelegate.swift */,
+				6F1B0C121F20F3CD005B4B01 /* Assets.xcassets */,
+				6F1B0C141F20F3CD005B4B01 /* LaunchScreen.storyboard */,
+				6F1B0C171F20F3CD005B4B01 /* Info.plist */,
+			);
+			name = "supporting files";
+			sourceTree = "<group>";
+		};
+		6F21F0851F2209F60062859D /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				6F21F0861F220A040062859D /* UIView+Constraints.swift */,
+				6F21F0881F221E690062859D /* String+Height.swift */,
+			);
+			name = utils;
 			sourceTree = "<group>";
 		};
 		99D7AD2D971123AEAC9E3EA7 /* Pods */ = {
@@ -326,7 +348,9 @@
 				6F1B0C1F1F20F48E005B4B01 /* Router.swift in Sources */,
 				6F1B0C271F20F4D0005B4B01 /* HomePresenter.swift in Sources */,
 				6F21F0811F21FE340062859D /* DetailsPresenterDelegate.swift in Sources */,
+				6F21F0871F220A040062859D /* UIView+Constraints.swift in Sources */,
 				6F1B0C3B1F20FC5F005B4B01 /* Contact.swift in Sources */,
+				6F21F0891F221E690062859D /* String+Height.swift in Sources */,
 				6F1B0C411F210A9B005B4B01 /* HomeTableViewCell.swift in Sources */,
 				6F1B0C0C1F20F3CD005B4B01 /* AppDelegate.swift in Sources */,
 				6F1B0C2D1F20F4F1005B4B01 /* HomeViewControllerDelegate.swift in Sources */,

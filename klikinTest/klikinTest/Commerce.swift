@@ -58,4 +58,9 @@ class Commerce: JSONModel {
         
         return (shortDescription == "") || (shortDescription == ".")
     }
+    
+    func formatAddress() -> String {
+        
+        return address.formatAddress()
+    }
 }

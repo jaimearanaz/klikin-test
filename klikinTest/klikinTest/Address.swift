@@ -16,7 +16,17 @@ class Address: JSONModel {
     var street = ""
     var country = ""
     
+    // MARK: - Lifecycle methods
+    
     override class func propertyIsOptional(_ propertyName: String!) -> Bool {
         return true
+    }
+    
+    // MARK: - Public methods
+    
+    func formatAddress() -> String {
+        
+        let components = [street.capitalized, city.capitalized, String(zip), country.capitalized]
+        return components.joined(separator: ", ")
     }
 }

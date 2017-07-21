@@ -9,5 +9,10 @@
 import Foundation
 
 protocol DetailsViewControllerDelegate {
+ 
+    func startLoading()
     
+    func stopLoading()
+    
+    func showCommerce(_ commerce: Commerce)
 }

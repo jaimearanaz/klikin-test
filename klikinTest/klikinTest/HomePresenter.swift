@@ -38,7 +38,6 @@ class HomePresenter: HomePresenterDelegate {
         dataSource?.getCommerces(completion: { (commerces, error) in
             
             self.controllerDelegate?.stopLoading()
-            
             if (error == nil) {
                 self.controllerDelegate?.showCommerces(commerces)
             } else {

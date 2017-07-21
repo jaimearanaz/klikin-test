@@ -33,8 +33,16 @@ class DetailsPresenter: DetailsPresenterDelegate {
     
     func showCommerce(commerceId: String) {
         
+        controllerDelegate?.startLoading()
+        
         dataSource?.getCommerce(withId: commerceId, completion: { (commerce, error) in
             
+            self.controllerDelegate?.stopLoading()
+            if (error == nil) {
+                self.controllerDelegate?.showCommerce(commerce)
+            } else {
+                // TODO: handle error
+            }
         })
     }
 }
